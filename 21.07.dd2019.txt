@@ -1,0 +1,25 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int v1 = 0;
+        int v2 = 2;
+        String v3= "a";
+        double result1;
+        String resalt2;
+        try {
+            result1 = v2 / v1;
+        } catch (ArithmeticException exp){
+            System.out.println( " devizion by zero");
+        }
+        try {
+            resalt2 = "v2/v3";
+            Integer r = Integer.parseInt(resalt2);
+        } catch (NumberFormatException sre) {
+            System.out.println( "devision by letter");
+        }
+    }
+
+
+}
